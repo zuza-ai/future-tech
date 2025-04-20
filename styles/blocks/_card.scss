@@ -5,7 +5,7 @@
         display: grid;
         grid-template-columns: 37.5% auto;
     }
-    
+
     &__preview,
     &__body {
         padding: rem(80);
@@ -21,7 +21,7 @@
         justify-content: center;
         row-gap: fluid(60, 20);
         padding-left: 0;
-        
+
         @include tablet-above {
             border-right: var(--border);
         }
@@ -70,14 +70,15 @@
         display: grid;
 
         &--2-cols {
+            grid-template-columns: repeat(2, 1fr);
             gap: fluid(30, 10);
 
             @include mobile {
                 grid-template-columns: 1fr;
             }
         }
+
         &--2-cols-alt {
-            grid-template-columns: auto 1fr;
             gap: rem(30) rem(20);
 
             @include laptop {
@@ -85,7 +86,7 @@
             }
 
             @include mobile-above {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: auto 1fr;
             }
         }
 
@@ -128,7 +129,9 @@
         &:has(.card__cell-link) {
             display: grid;
             grid-template-columns: 1fr auto;
-            grid-template-areas: 'other link' 'other link';
+            grid-template-areas:
+                'other link'
+                'other link';
             align-items: center;
             gap: fluid(14, 10) rem(20);
         }

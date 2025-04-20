@@ -17,7 +17,7 @@ class VideoPlayer {
         this.videoElement = this.rootElement.querySelector(this.selectors.video)
         this.panelElement = this.rootElement.querySelector(this.selectors.panel)
         this.playButtonElement = this.rootElement.querySelector(this.selectors.playButton)
-        this.bindEvents ()
+        this.bindEvents()
     }
 
     onPlayButtonClick = () => {

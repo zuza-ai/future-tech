@@ -2,7 +2,7 @@ class Header {
     selectors = {
         root: '[data-js-header]',
         overlay: '[data-js-header-overlay]',
-        burgerButton: '[data-js-header-burger-button]'
+        burgerButton: '[data-js-header-burger-button]',
     }
 
     stateClasses = {
@@ -14,7 +14,7 @@ class Header {
         this.rootElement = document.querySelector(this.selectors.root)
         this.overlayElement = this.rootElement.querySelector(this.selectors.overlay)
         this.burgerButtonElement = this.rootElement.querySelector(this.selectors.burgerButton)
-        this.bindEvents() 
+        this.bindEvents()
     }
 
     onBurgerButtonClick = () => {

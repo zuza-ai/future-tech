@@ -1,11 +1,11 @@
-import pxToRem from "./utils/pxToRem.js"
+import pxToRem from './utils/pxToRem.js'
 
 const rootSelector = '[data-js-expandable-content]'
 
 class ExpandableContent {
     selectors = {
         root: rootSelector,
-        button: '[data-js-expandable-content-button]',
+        button: '[data-js-expandable-content-button]'
     }
 
     stateClasses = {

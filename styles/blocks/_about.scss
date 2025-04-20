@@ -12,7 +12,9 @@
     &__header {
         display: grid;
         grid-template-columns: auto 1fr;
-        grid-template-areas: 'icon info' 'icon description';
+        grid-template-areas:
+            'icon info'
+            'icon description';
         align-items: center;
         gap: rem(30) fluid(80, 20);
 
@@ -21,7 +23,10 @@
         }
 
         @include mobile {
-            grid-template-areas: 'icon subtitle' 'title title' 'description description';
+            grid-template-areas:
+                'icon subtitle'
+                'title title'
+                'description description';
             row-gap: rem(4);
         }
     }

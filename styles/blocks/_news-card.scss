@@ -20,7 +20,10 @@
 
         @include mobile-above {
             grid-template-columns: 32% 1fr;
-            grid-template-areas: 'image other' 'image other' 'image other';
+            grid-template-areas:
+                'image other'
+                'image other'
+                'image other';
         }
 
         .news-card {
@@ -70,6 +73,8 @@
     }
 
     &__link {
-        min-width: rem(153);
+        @include mobile-s {
+            min-width: rem(153);
+        }
     }
 }

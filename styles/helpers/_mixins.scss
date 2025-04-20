@@ -68,8 +68,7 @@
 @mixin full-vw-centered-line($property: top,
   $left: 50%,
   $right: auto,
-  $translate: -50%
-) {
+  $translate: -50%) {
   position: relative;
 
   &::before {

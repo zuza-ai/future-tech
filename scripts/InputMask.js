@@ -14,7 +14,7 @@ class InputMask {
                 mask: this.rootElement.dataset.jsInputMask
             })
         } else {
-            console.error('Библиотека "imask" не подключена!');
+            console.error('Библиотека "imask" не подключена!')
         }
     }
 }
